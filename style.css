@@ -1,0 +1,947 @@
+/** CONTENIDO OTROS**/
+*{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.resolution{
+    width: 99%;
+}
+/**MOVIL**/
+@media (max-width:767px){
+    .desktop{ display: none;}
+}
+
+/**COMPU**/
+@media (min-width:991px){
+    .movil{ display: none;}
+}
+
+body{background-color: #ffffff}
+h1 {
+    font-size: 3.6rem;
+    color: #444444;
+}
+h2 {
+    font-size: 3rem;
+    color: #444444;
+}
+h3 {
+    font-size: 2rem;
+    color: #444444;
+}
+p {
+    font-size: 1.6rem;
+    color: #444444;
+
+}
+header {
+    text-align: center;
+}
+.barritasR {
+    position: flex;
+    margin-left:10px;
+    margin-top: 5px;
+}
+
+.barritasSpp {
+    position: flex;
+    margin-left: -53px;
+    margin-bottom: 3px;
+}
+.barritasSpp2 {
+    position: flex;
+    margin-left: -49px;
+    margin-bottom: 3px;
+}
+.barritasSpp3 {
+    position: flex;
+    margin-left: -51px;
+    margin-bottom: 1px;
+}
+/** CONTENIDO DE LA IMG1**/
+.ImagenGorraN1 {
+    position: relative;
+    top: 0px;
+    left:0px;
+    width: 670px;
+    height: 740px;
+}
+.textoEncima {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+}
+.imgEncima {
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20%;
+}
+.imgEncima2 {
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    height: 80px;
+    width: 80px;
+}
+.imgEncima3 {
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+    height: 80px;
+    width: 80px;
+}
+.flechaIzq {
+    position: absolute;
+    top:25px;
+    left: 30px;
+}
+.cora {
+    position: absolute;
+    top:22px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+/** CONTENIDO DE LA IMG1**/
+
+/** CONTENIDO DE LA IMG2**/
+.ImagenGorraN2 {
+    position: absolute;
+    top:789px;
+    bottom: 0px;
+    left: 670px;
+    height: 740px;
+    width: 670px;
+}
+.CuadroMN1{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN1-1:hover ~.CuadroMN1{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN1-1:hover ~.circuloMN1{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN1-1:hover{
+    opacity:1;
+    visibility: visible;   
+}
+
+
+.RectMN1{
+    position: absolute;
+    top:925px;
+    left: 988px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN1{
+    position: absolute;
+    top:1025px;
+    left: 1054px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN1{
+    position: absolute;
+    top:1032px;
+    left: 1061px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    opacity: 1;
+    z-index: 1;
+
+}
+.SignoMN1-1{
+    position: absolute;
+    top: 1027.5px;
+    left: 1057px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+   visibility: transparent;
+    z-index: 2;
+}
+
+.CuadroMN2{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN2-2:hover ~.CuadroMN2{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN2-2:hover ~.circuloMN2{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN2-2:hover{
+opacity:1;   
+}
+.RectMN2{
+    position: absolute;
+    top:1110px;
+    left: 682px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN2{
+    position: absolute;
+    top:1220px;
+    left: 754px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN2{
+    position: absolute;
+    top:1227px;
+    left: 761px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+}
+.SignoMN2-2{
+    position: absolute;
+    top: 1222.5px;
+    left: 756.5px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+
+.CuadroMN3{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN3-3:hover ~.CuadroMN3{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN3-3:hover ~.circuloMN3{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN3-3:hover{
+opacity:1;   
+}
+.RectMN3{
+    position: absolute;
+    top:1087px;
+    left: 875px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN3{
+    position: absolute;
+    top:1183px;
+    left: 944px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN3{
+    position: absolute;
+    top:1190px;
+    left: 951px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+}
+.SignoMN3-3{
+    position: absolute;
+    top: 1185.5px;
+    left: 946.5px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+
+.CuadroMN4{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN4-4:hover ~.CuadroMN4{
+        opacity: 1;
+        visibility:visible;
+}
+.SignoMN4-4:hover ~.circuloMN4{
+    transition: (1000 50 100 0);
+    box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN4-4:hover{
+    opacity:1;   
+}
+.RectMN4{
+    position: absolute;
+    top:1127px;
+    left: 1105px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN4{
+    position: absolute;
+    top:1223px;
+    left: 1160px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN4{
+    position: absolute;
+    top:1230px;
+    left: 1167px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+
+}
+.SignoMN4-4{
+    position: absolute;
+    top: 1225.5px;
+    left: 1163px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+/** CONTENIDO DE LA IMG2**/
+
+/** CONTENIDO DE LA IMG3**/
+.ImagenGorraN3 {
+    position: absolute;
+    top:789px;
+    bottom: 0px;
+    left: 40px;
+    height: 740px;
+    width: 630px;
+}
+.textImg3-0{
+    vertical-align: middle;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top:350px;
+    left:40px;
+}
+.textImg3-1{
+    vertical-align: middle;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top:-80px;
+    left:40px;
+    font-size: 14px;
+}
+.textImg3-2{
+    vertical-align: middle;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    position: absolute;
+    top:-40px;
+    left:120px;
+}
+.textImg3-3{
+    vertical-align: middle;
+    text-align: center;
+    height: 80px;
+    width: 400px;
+    position: absolute;
+    top:90px;
+    left:100px;
+}
+/** CONTENIDO DE LA IMG3**/
+
+
+.rectR {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3D43AC;
+    border-radius: 10%;
+    background-color: white;
+    color:#3D43AC;
+    text-align: center;
+    line-height: 220%;
+}
+
+.rectR2 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3D43AC;
+    border-radius: 10%;
+    background-color: #3D43AC;
+    color:white;
+    text-align: center;
+    line-height: 220%;
+
+}
+
+/**------------TOOLBAR------------**/
+.lineSup1{
+    position: absolute;
+    left: 46px;
+    top:2px;
+    height: 25px;
+    color:gray;
+    opacity: 50%;
+}
+.lineSup2{
+    position: absolute;
+    right: 46px;
+    top:2px;
+    height: 25px;
+    color:gray;
+    opacity: 50%;
+}
+#card {
+    position: absolute;
+    top:10px;
+    right: 5px;
+    height: 30px;
+    width: 150px;
+}
+.bag {
+    position: absolute;
+    margin-top:3px;
+    right: 13px;
+}
+.user {
+    position: absolute;
+    margin-top:3px;
+    left: 70px;
+}
+.lupa {
+    position: absolute;
+    margin-top: 3px;
+    left:13px;
+}
+.toolbar {
+    position: relative;
+    top: 0;
+    height: 50px;
+    width:auto;
+    margin-right:-13px;
+    border: 0.5px solid #ffffff;
+    border-bottom:0.5px solid #3D47A9;
+    background-color: #FFFFFF;
+    color: #3D47A9;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+/**------------TOOLBAR------------**/
+
+
+
+/**------------INFO DE LA IMG1------------**/
+ .InfoGorra2 {
+    position: relative;
+    top:-720px;
+    left: 735px;
+    margin-right: 840px;
+    height: 600px;
+    color: #3D47A9;
+    text-align: left;
+ } 
+ .medidas {
+     position: absolute;
+     top: 100px;
+     right: 0px;
+     left: 390px;
+     bottom: 0px;
+     height: 20px;
+     
+ }
+/**------------INFO DE LA IMG1------------**/
+
+
+
+
+.tabla{
+    color: #434343;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+}
+.circuloP {
+    color:white;
+    background-color: #434343;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-left:5px;
+    margin-top: 5px;
+}
+.circuloG {
+    position: flex;
+    margin-left: 18px;
+    margin-top:-18px;
+    margin-bottom: 5px;
+    color:#434343;
+    background-color: #F9F9F9;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.circuloGN {
+    position: flex;
+    margin-left: 18px;
+    margin-top:-18px;
+    margin-bottom: 5px;
+    color:#F9F9F9;
+    background-color: #000000;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.tabla1 {
+    position: flex;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    color:#434343;
+    width:210px;
+    
+}
+.tabla2 {
+    position: flex;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    color:#434343;
+    width:75px;
+}
+.tabla3 {
+    position: flex;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 210px;
+    font-size:20px;
+    color:#434343;
+}
+.signoMore {
+    align-items: right;
+    position: flex;
+    margin-left:470px;
+    margin-top:-122px;
+}
+
+/**BOTON DE COMPRA*/
+.btnShop{    
+    margin-top: 25px;
+    cursor: pointer;
+}
+.btnShop:hover{
+    filter: brightness(0.9);
+    filter: opacity(.9);
+}
+#btn-modalShop{
+    
+    display: none;
+}
+.rectShop{
+    position: absolute;
+    width: 487;
+    height: 43;
+    top: 20px;
+}
+.modalShop{
+    width: 487px;
+    height: 42px;
+    position: relative;
+    top:-46px;
+    right: 0px;
+    border-radius: 6px;
+    background: rgb(12, 201, 28);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+
+
+}
+#btn-modalShop:checked ~ .modalShop{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedorShop{
+    width: 487px;
+    height: 45px;
+    background-color:transparent;
+    text-align: center;
+    color: #ffffff;
+    transition: all 500ms ease;
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    top:13px;
+    left: 0px;
+    cursor: pointer;
+}
+/**BOTON DE COMPRA*/
+
+/**COMPOSICION Y CUIDADO*/
+
+.modal{
+    width: 650px;
+    height: 800px;
+    display: flex;
+    position: absolute;
+    top:-99px;
+    right: -85px;
+    bottom:0;
+    background: rgba(0,0,0,0.5px);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor{
+    position: relative;
+    top:100px;
+    left: 45px;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+    width: 550px;
+    height: 635px;
+}
+
+.contenedor header{
+    padding: 10px;
+    background-color:#FFFFFF;
+    color:#3D43AC;
+    text-align: left;
+}
+
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lbl-modal{
+    padding: 2px 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btn-modal{
+    display: none;
+}
+/**COMPOSICION Y CUIDADO*/
+  
+/**SIZE GUIDE*/
+
+.modalG{
+    width: 650px;
+    height: 700px;
+    display: flex;
+    position: absolute;
+    top:-150px;
+    right: -80px;
+    bottom:0;
+    background: rgba(0,0,0,0.5px);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-modalG:checked ~ .modalG{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorG{
+    position: relative;
+    top:50px;
+    left: 45px;
+    width: 550px;
+    height: 637px;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+}
+
+.contenedorG header{
+    padding: 10px;
+    background-color: #FFFFFF;
+    color:#3D43AC;
+}
+
+.contenedorG label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(172, 16, 16);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lbl-modalG {
+    padding: 2px 3px;
+    margin-left:-32px;
+    cursor: pointer;
+}
+#btn-modalG{
+    display: none;
+}
+/**SIZE GUIDE*/
+
+
+.corte{
+    position: absolute;
+    margin-left: -40px;
+    left: 50px;
+    top: 1560px;
+    text-align: left;
+    height: 60px;
+    width:1000px;
+    vertical-align: middle;
+    padding: 5px;
+}
+/**-----------------------DESCRIPCION DE LAS IMAGENES DE MUJERES------------------------**/
+.DescImgsF{
+    position: relative;
+    left: 45px;
+    bottom: 0px;
+    width: 1245px;
+    height: 100px;
+}
+.MarcoImgsF{
+    position: relative;
+    bottom: -250px;
+    
+}
+.Info1{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    color: #434343;
+}
+.Info2{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    left:315px;
+    color: #434343;
+}.Info3{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    right: 315px;
+    color:#434343;
+}.Info4{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    right:0px;
+    color: #434343;
+}
+/**-----------------------DESCRIPCION DE LAS IMAGENES DE MUJERES------------------------**/
+
+/**-----------------------FOOTER------------------------**/
+.footer{
+    position: relative;
+    bottom:-300px;
+    height: 300px;
+}
+.FooterContent1{
+    width: 100px;
+    height: 168px;
+    position: relative;
+    left: 150px;    
+}
+.FooterTitle1{
+    position: absolute;
+}
+.FooterText1{
+    width: 100px;
+    color:#707070;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+}
+.FooterContent2{
+    width: 170px;
+    height: 168px;
+    position: absolute;
+    top:0px;
+    left: 350px;    
+}
+.FooterTitle2{
+    position: absolute;
+}
+.FooterText2{
+    width: 170px;
+    color:#707070;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+}
+.FooterContent3{
+    width: 250px;
+    height: 168px;
+    position: absolute;
+    top:0px;
+    left: 600px;    
+}
+.FooterTitle3{
+    position: absolute;
+}
+.FooterText3-1{
+    width: 250px;
+    color:#707070;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+}
+.FooterText3-2{
+    width: 250px;
+    color:#707070;
+    font-size: 16px;
+    position: absolute;
+    top: 70px;
+}
+.FooterText3-3{
+    width: 290px;
+    color:#707070;
+    font-size: 16px;
+    position: absolute;
+    top: 100px;
+}
+
+.RectNews{
+    background-color: #F9F9F9;
+    width: 420px;
+    height: 168px;
+    position: absolute;
+    top:0px;
+    right: 30px;
+}
+.NewsTitle{
+    color: #3D43AC;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    top:10px;
+    left: 40px;
+}
+.NewsText{
+    font-size: 15px;
+    color: #707070;
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+}
+.RectEmail{
+    border: 2px solid gray;
+    width: 350px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px;
+    left: 39px;
+}
+.RectEmail1{
+    position: absolute;
+    top:15px;
+    left: 15px;
+}
+.RectEmail2{
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+.RectEmail3{
+    position: absolute;
+    top:10px;
+    left: 35px;
+    color: #707070;
+    font-size: 14px;
+}
+
+.SocialRed{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom:45px;
+    left:620px;
+}
+.Derechos{
+    background-color:transparent;
+    position: absolute;
+    bottom: 15px;
+    left: 500px;
+}
+/**-----------------------FOOTER------------------------**/
