@@ -2,13 +2,14 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .resolution{
     width: 99%;
 }
 /**MOVIL**/
-@media (max-width:767px){
+@media (max-width:839px){
     .desktop{ display: none;}
 }
 
@@ -977,6 +978,8 @@ opacity:1;
     border-top-left-radius:55%;
     position: fixed;
     bottom: 0px;
+    right:0px;
+    left: 0px;
     background-color:#EBEBEB;
 }
 .ToolbarMenu{
@@ -1088,8 +1091,8 @@ opacity:1;
     
 }
 .modalGMov{
-    width: 100vw;
-    height: 100vw;
+    width: 550px;
+    height: 780px;
     display: flex;
     position: relative;
     top:-630px;
@@ -1097,8 +1100,10 @@ opacity:1;
     bottom:0;
     background: rgba(0,0,0,0.5px);
     transition: all 500ms ease;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ffaaff;
+
 }
 #btn-modalGMov:checked ~ .modalGMov{
     opacity: 1;
@@ -1106,16 +1111,15 @@ opacity:1;
 }
 
 .contenedorGMov{
-        border:1px solid gold;
-
+    border:1px solid gold;
     position: relative;
-    top:50px;
+    top:10px;
     left: 45px;
     width: 550px;
-    height: 737px;
-    background-color: #ffffff;
+    height: 780px;
     transition: all 500ms ease;
-
+    background-color: #FFFFFF;
+    visibility: hidden;
 }
 
 .contenedorGMov header{
@@ -1135,17 +1139,337 @@ opacity:1;
 
 .lbl-modalGMov{
     border:1px solid gold;
+    background-color: #000000;
     padding: 2px 3px;
     margin-left:-32px;
 }
 #btn-modalGMov{
     display: none;
-}
 
+}
+.tablaMov{
+    color: #434343;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+}
+.circuloP {
+    color:white;
+    background-color: #434343;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-left:5px;
+    margin-top: 5px;
+}
+.signoMoreMov {
+    align-items: right;
+    position: flex;
+    margin-left:370px;
+    margin-top:-122px;
+}
 /*************************************SIZE GUIDE MOVIL*********************************************************/
 
+/*************************************IMAGEN N3*********************************************************/
+
+.ImagenGorraN3Mov{
+    position: relative;
+    top:270px;
+    bottom: 0px;
+    left: 0px;
+    height: 100vw;
+    width: 100vw;
+    
+}
+.ImagenGorraN3Mov1{
+    position: relative;
+    top:270px;
+    bottom: 0px;
+    left: 0px;
+    height: 100vw;
+    width: 100vw;
+    z-index: -2;  
+}
+.textImg3-0Mov{
+    vertical-align: middle;
+    text-align: center;
+    height:70vw;
+    width:70vw;
+    position: absolute;
+    top:320px;
+    left:70px;
+}
+.textImg3-1Mov{
+    vertical-align: middle;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top:100px;
+    right:-25vw;
+    font-size: 15px;
+}
+.textImg3-2Mov{
+    vertical-align: middle;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    position: absolute;
+    top:160px;
+    left:5vw;
+}
+/*************************************IMAGEN N3*********************************************************/
+
+/*************************************IMAGEN N2*********************************************************/
+.ImagenGorraN2Mov{
+    position: relative;
+    top:265px;
+    left: 0px;
+    height: 110vw;
+    width: 100vw;
+    z-index: -2;
+}
+.CuadroMN1Mov{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN1-1Mov:hover ~.CuadroMN1Mov{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN1-1Mov:hover ~.circuloMN1Mov{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN1-1Mov:hover{
+    opacity:1;
+    visibility: visible;   
+}
 
 
+.RectMN1Mov{
+    position: absolute;
+    top:925px;
+    left: 988px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN1Mov{
+    position: absolute;
+    top:1025px;
+    left: 1054px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN1Mov{
+    position: absolute;
+    top:1032px;
+    left: 1061px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    opacity: 1;
+    z-index: 1;
+
+}
+.SignoMN1-1Mov{
+    position: absolute;
+    top: 1027.5px;
+    left: 1057px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+   visibility: transparent;
+    z-index: 2;
+}
+
+.CuadroMN2Mov{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN2-2Mov:hover ~.CuadroMN2Mov{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN2-2Mov:hover ~.circuloMN2Mov{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN2-2Mov:hover{
+opacity:1;   
+}
+.RectMN2Mov{
+    position: absolute;
+    top:1110px;
+    left: 682px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN2Mov{
+    position: absolute;
+    top:1220px;
+    left: 754px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN2Mov{
+    position: absolute;
+    top:1227px;
+    left: 761px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+}
+.SignoMN2-2Mov{
+    position: absolute;
+    top: 1222.5px;
+    left: 756.5px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+
+.CuadroMN3Mov{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN3-3Mov:hover ~.CuadroMN3Mov{
+    opacity: 1;
+    visibility:visible;
+}
+.SignoMN3-3Mov:hover ~.circuloMN3Mov{
+transition: (1000 50 100 0);
+box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN3-3Mov:hover{
+opacity:1;   
+}
+.RectMN3Mov{
+    position: absolute;
+    top:1087px;
+    left: 875px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN3Mov{
+    position: absolute;
+    top:1183px;
+    left: 944px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN3Mov{
+    position: absolute;
+    top:1190px;
+    left: 951px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+}
+.SignoMN3-3Mov{
+    position: absolute;
+    top: 1185.5px;
+    left: 946.5px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+
+.CuadroMN4Mov{
+    opacity: 0;
+    visibility: hidden;
+}
+.SignoMN4-4Mov:hover ~.CuadroMN4Mov{
+        opacity: 1;
+        visibility:visible;
+}
+.SignoMN4-4Mov:hover ~.circuloMN4Mov{
+    transition: (1000 50 100 0);
+    box-shadow: 0px 0px 0px 6px #a3a7a452;
+
+}
+.SignoMN4-4Mov:hover{
+    opacity:1;   
+}
+.RectMN4Mov{
+    position: absolute;
+    top:1127px;
+    left: 1105px;
+    height: 65px;
+    width: 160px;
+    font-size: 11px;
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 6px;
+}
+.circuloMN4Mov{
+    position: absolute;
+    top:1223px;
+    left: 1160px;
+    height: 30px;
+    width: 30px;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #a3a7a452;
+}
+.SignoMN4Mov{
+    position: absolute;
+    top:1230px;
+    left: 1167px;
+    height: 16px;
+    width: 16px;
+    color: gray;
+    z-index: 1;
+
+}
+.SignoMN4-4Mov{
+    position: absolute;
+    top: 1225.5px;
+    left: 1163px;
+    height: 25px;
+    width: 25px;
+    color: gray;
+    opacity: 0; 
+    z-index: 2;
+}
+/*************************************IMAGEN N2*********************************************************/
 
 
 
