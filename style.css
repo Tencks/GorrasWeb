@@ -38,6 +38,7 @@ p {
 header {
     text-align: center;
 }
+/**-----------------------------------------------ACA ES VERSION PC---------------------------------------------------*/
 .barritasR {
     position: flex;
     margin-left:10px;
@@ -504,33 +505,7 @@ opacity:1;
      height: 20px;
      
  }
-/**------------INFO DE LA IMG1------------**/
-
-
-
-
-.tabla{
-    color: #434343;
-    border: 1px solid #434343;
-    border-radius: 5px;
-    margin-left: 100px;
-    margin-top: 10px;
-    height: 30px;
-    width: 300px;
-}
-.circuloP {
-    color:white;
-    background-color: #434343;
-    border-radius: 100%;
-    height: 18px;
-    width: 18px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 15px;
-    margin-left:5px;
-    margin-top: 5px;
-}
-.circuloG {
+ .circuloG {
     position: flex;
     margin-left: 18px;
     margin-top:-18px;
@@ -558,6 +533,33 @@ opacity:1;
     vertical-align: middle;
     font-size: 18px;
 }
+/**------------INFO DE LA IMG1------------**/
+
+
+
+
+.tabla{
+    color: #434343;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+}
+.circuloP {
+    color:white;
+    background-color: #434343;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-left:5px;
+    margin-top: 5px;
+}
+
 .tabla1 {
     position: flex;
     text-align: left;
@@ -945,3 +947,223 @@ opacity:1;
     left: 500px;
 }
 /**-----------------------FOOTER------------------------**/
+
+/**-----------------------------------------------ACA ES VERSION PC---------------------------------------------------*/
+
+
+
+
+/**-----------------------------------------------ACA ES VERSION MOVIL---------------------------------------------------*/
+
+.ImagenGorraN1Mov{
+    height: 100vw;
+    width: 100vw;
+    position: relative;
+    z-index: -2;
+}
+.CircToolbarMov{
+    background-color: #EBEBEB;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    border-radius: 100%;
+    bottom: 30px;
+    left: 43vw;
+}
+.ToolbarMov{
+    height:82px;
+    width: 100vw;
+    border-top-right-radius:55%;
+    border-top-left-radius:55%;
+    position: fixed;
+    bottom: 0px;
+    background-color:#EBEBEB;
+}
+.ToolbarMenu{
+    height: 15px;
+    position: fixed;
+    bottom:25px;
+    left: 12vw;
+}
+.ToolbarLupa{
+    position: fixed;
+    bottom:25px;
+    left: 32vw;
+}
+.RectShopMov{
+    position: fixed;
+    bottom: 8px;
+    left: 45.5vw;
+}
+.CircBtnShop{
+    background-color:#3D43AC;
+    height: 57px;
+    width: 57px;
+    position: fixed;
+    border-radius: 100%;
+    bottom: 34px;
+    left: 44.5vw;
+}
+.ShopCarMov{
+    position: fixed;
+    bottom: 52px;
+    left: 48.5vw; 
+}
+.TextShopMov{
+    font-size: 12px;
+    font-weight: 600;
+    color:#3D43AC;
+}
+.ToolbarUser{
+    position: fixed;
+    bottom:25px;
+    right: 32vw;
+}
+.ToolbarBag{
+    position: fixed;
+    bottom:25px;
+    right: 12vw;
+}
+.ContentMov{
+    position: relative;
+    top:-55px;
+    height: 2665px;
+    width: 100vw;
+    background-color:#FFFFFF;
+    box-shadow: 0px -10px 15px #0000000D;
+    border-top-right-radius:60px;
+    border-top-left-radius:60px;
+    z-index: -1;
+}
+.RectGris{
+    position: absolute;
+    left: 45.5vw; 
+    top:20px;
+}
+
+.InfoGorraMov{
+    border: 1px solid red;
+    width: 90vw;
+    position: absolute;
+    top:50px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.circuloGMov{
+    position: flex;
+    margin-left: 18px;
+    margin-top:-12px;
+    margin-bottom: 5px;
+    color:#434343;
+    background-color: #F9F9F9;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.circuloGNMov{
+    position: flex;
+    margin-left: 18px;
+    margin-top:-18px;
+    margin-bottom: 5px;
+    color:#F9F9F9;
+    background-color: #000000;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+}
+/*************************************SIZE GUIDE MOVIL*********************************************************/
+.medidasMov {
+    position: absolute;
+    top: 134px;
+    right: 0px;
+    left: 270px;
+    bottom: 0px;
+    height: 15px;
+    
+}
+.modalGMov{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    position: relative;
+    top:-630px;
+    right:335px;
+    bottom:0;
+    background: rgba(0,0,0,0.5px);
+    transition: all 500ms ease;
+    opacity: 1;
+    visibility: visible;
+}
+#btn-modalGMov:checked ~ .modalGMov{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorGMov{
+        border:1px solid gold;
+
+    position: relative;
+    top:50px;
+    left: 45px;
+    width: 550px;
+    height: 737px;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+
+}
+
+.contenedorGMov header{
+    padding: 10px;
+    background-color: #FFFFFF;
+    color:#3D43AC;
+}
+
+.contenedorGMov label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(172, 16, 16);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lbl-modalGMov{
+    border:1px solid gold;
+    padding: 2px 3px;
+    margin-left:-32px;
+}
+#btn-modalGMov{
+    display: none;
+}
+
+/*************************************SIZE GUIDE MOVIL*********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**-----------------------------------------------ACA ES VERSION MOVIL---------------------------------------------------*/
