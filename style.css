@@ -9,7 +9,7 @@
     width: 99%;
 }
 /**MOVIL**/
-@media (max-width:839px){
+@media (max-width:775px){
     .desktop{ display: none;}
 }
 
@@ -40,6 +40,64 @@ header {
     text-align: center;
 }
 /**-----------------------------------------------ACA ES VERSION PC---------------------------------------------------*/
+
+/**------------TOOLBAR------------**/
+.lineSup1{
+    position: absolute;
+    left: 46px;
+    top:2px;
+    height: 25px;
+    color:gray;
+    opacity: 50%;
+}
+.lineSup2{
+    position: absolute;
+    right: 46px;
+    top:2px;
+    height: 25px;
+    color:gray;
+    opacity: 50%;
+}
+#card {
+    position: absolute;
+    top:10px;
+    right: 5px;
+    height: 30px;
+    width: 150px;
+}
+.bag {
+    position: absolute;
+    margin-top:3px;
+    right: 13px;
+}
+.user {
+    position: absolute;
+    margin-top:3px;
+    left: 70px;
+}
+.lupa {
+    position: absolute;
+    margin-top: 3px;
+    left:13px;
+}
+.toolbar {
+    position: relative;
+    top: 0;
+    height: 50px;
+    width:auto;
+    margin-right:-13px;
+    border: 0.5px solid #ffffff;
+    border-bottom:0.5px solid #3D47A9;
+    background-color: #FFFFFF;
+    color: #3D47A9;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+/**------------TOOLBAR------------**/
+
 .barritasR {
     position: flex;
     margin-left:10px;
@@ -428,62 +486,6 @@ opacity:1;
 
 }
 
-/**------------TOOLBAR------------**/
-.lineSup1{
-    position: absolute;
-    left: 46px;
-    top:2px;
-    height: 25px;
-    color:gray;
-    opacity: 50%;
-}
-.lineSup2{
-    position: absolute;
-    right: 46px;
-    top:2px;
-    height: 25px;
-    color:gray;
-    opacity: 50%;
-}
-#card {
-    position: absolute;
-    top:10px;
-    right: 5px;
-    height: 30px;
-    width: 150px;
-}
-.bag {
-    position: absolute;
-    margin-top:3px;
-    right: 13px;
-}
-.user {
-    position: absolute;
-    margin-top:3px;
-    left: 70px;
-}
-.lupa {
-    position: absolute;
-    margin-top: 3px;
-    left:13px;
-}
-.toolbar {
-    position: relative;
-    top: 0;
-    height: 50px;
-    width:auto;
-    margin-right:-13px;
-    border: 0.5px solid #ffffff;
-    border-bottom:0.5px solid #3D47A9;
-    background-color: #FFFFFF;
-    color: #3D47A9;
-    font-weight: bold;
-    font-size: 20px;
-    opacity: 100%;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-/**------------TOOLBAR------------**/
 
 
 
@@ -677,7 +679,7 @@ opacity:1;
     background-color: #ffffff;
     transition: all 500ms ease;
     width: 550px;
-    height: 635px;
+    height: 645px;
 }
 
 .contenedor header{
@@ -731,7 +733,7 @@ opacity:1;
     top:50px;
     left: 45px;
     width: 550px;
-    height: 637px;
+    height: 645px;
     background-color: #ffffff;
     transition: all 500ms ease;
 }
@@ -798,13 +800,15 @@ opacity:1;
     position: absolute;
     left:315px;
     color: #434343;
-}.Info3{
+}
+.Info3{
     height: 100px;
     width:300px;
     position: absolute;
     right: 315px;
     color:#434343;
-}.Info4{
+}
+.Info4{
     height: 100px;
     width:300px;
     position: absolute;
@@ -955,12 +959,32 @@ opacity:1;
 
 
 /**-----------------------------------------------ACA ES VERSION MOVIL---------------------------------------------------*/
+.InfoGorraMov{
+    border: 1px solid red;
+    width: 90vw;
+    position: absolute;
+    top:50px;
+    margin-left:20px;
+    margin-right:20px;
+    z-index: -1;
+}
+.ContentMov{
+    position: relative;
+    top:-55px;
+    height: 2665px;
+    width: 100vw;
+    background-color:#FaaFFF;
+    box-shadow: 0px -10px 15px #0000000D;
+    border-top-right-radius:60px;
+    border-top-left-radius:60px;
+    z-index: -2;
+}
 
 .ImagenGorraN1Mov{
     height: 100vw;
     width: 100vw;
     position: relative;
-    z-index: -2;
+    z-index: -3;
 }
 .CircToolbarMov{
     background-color: #EBEBEB;
@@ -981,6 +1005,7 @@ opacity:1;
     right:0px;
     left: 0px;
     background-color:#EBEBEB;
+    z-index: 100;
 }
 .ToolbarMenu{
     height: 15px;
@@ -1027,30 +1052,11 @@ opacity:1;
     bottom:25px;
     right: 12vw;
 }
-.ContentMov{
-    position: relative;
-    top:-55px;
-    height: 2665px;
-    width: 100vw;
-    background-color:#FFFFFF;
-    box-shadow: 0px -10px 15px #0000000D;
-    border-top-right-radius:60px;
-    border-top-left-radius:60px;
-    z-index: -1;
-}
+
 .RectGris{
     position: absolute;
     left: 45.5vw; 
     top:20px;
-}
-
-.InfoGorraMov{
-    border: 1px solid red;
-    width: 90vw;
-    position: absolute;
-    top:50px;
-    margin-left:20px;
-    margin-right:20px;
 }
 .circuloGMov{
     position: flex;
@@ -1180,39 +1186,30 @@ opacity:1;
 
 .ImagenGorraN3Mov{
     position: relative;
-    top:270px;
-    bottom: 0px;
+    top:-2180px;
     left: 0px;
     height: 100vw;
     width: 100vw;
-    
+    z-index: -1;
 }
 .ImagenGorraN3Mov1{
     position: relative;
-    top:270px;
+    top:0px;
     bottom: 0px;
     left: 0px;
     height: 100vw;
     width: 100vw;
     z-index: -2;  
 }
-.textImg3-0Mov{
-    vertical-align: middle;
-    text-align: center;
-    height:70vw;
-    width:70vw;
-    position: absolute;
-    top:320px;
-    left:70px;
-}
+
 .textImg3-1Mov{
     vertical-align: middle;
     text-align: center;
     height: auto;
     width: 500px;
     position: absolute;
-    top:100px;
-    right:-25vw;
+    top:34vw;
+    right:0vw;
     font-size: 15px;
 }
 .textImg3-2Mov{
@@ -1221,19 +1218,19 @@ opacity:1;
     height: auto;
     width: 300px;
     position: absolute;
-    top:160px;
-    left:5vw;
+    top:47vw;
+    left:18vw;
 }
 /*************************************IMAGEN N3*********************************************************/
 
 /*************************************IMAGEN N2*********************************************************/
 .ImagenGorraN2Mov{
     position: relative;
-    top:265px;
+    top:-2180px;
     left: 0px;
     height: 110vw;
     width: 100vw;
-    z-index: -2;
+    z-index: -1;
 }
 .CuadroMN1Mov{
     opacity: 0;
@@ -1268,7 +1265,7 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 .circuloMN1Mov{
     position: absolute;
     top:1025px;
-    left: 1054px;
+    left: 0px;
     height: 30px;
     width: 30px;
     background-color: #F9F9F9;
@@ -1299,8 +1296,8 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 
 .CuadroMN2Mov{
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
 }
 .SignoMN2-2Mov:hover ~.CuadroMN2Mov{
     opacity: 1;
@@ -1316,8 +1313,8 @@ opacity:1;
 }
 .RectMN2Mov{
     position: absolute;
-    top:1110px;
-    left: 682px;
+    top:920px;
+    left: 0px;
     height: 65px;
     width: 160px;
     font-size: 11px;
@@ -1327,8 +1324,8 @@ opacity:1;
 }
 .circuloMN2Mov{
     position: absolute;
-    top:1220px;
-    left: 754px;
+    top:1015px;
+    left: 100px;
     height: 30px;
     width: 30px;
     background-color: #F9F9F9;
@@ -1337,8 +1334,8 @@ opacity:1;
 }
 .SignoMN2Mov{
     position: absolute;
-    top:1227px;
-    left: 761px;
+    top:1015px;
+    left:105px;
     height: 16px;
     width: 16px;
     color: gray;
@@ -1346,8 +1343,8 @@ opacity:1;
 }
 .SignoMN2-2Mov{
     position: absolute;
-    top: 1222.5px;
-    left: 756.5px;
+    top: 1012.5px;
+    left: 102.5px;
     height: 25px;
     width: 25px;
     color: gray;
@@ -1470,11 +1467,89 @@ opacity:1;
     z-index: 2;
 }
 /*************************************IMAGEN N2*********************************************************/
+.corteMov{
+    position: relative;
+    margin-left: 0px;
+    left: 0px;
+    top: -2185px;
+    text-align: center;
+    height: 60px;
+    width:100vw;
+    vertical-align: middle;
+    padding: 5px;
+    z-index: -1;
+}
+/*************************************IMAGENES MUJERES*********************************************************/
+.AmbasImgMov{
+    background-color: aqua;
+    position: relative;
+    top:-2185px;
+    width: 100vw;
+    height: 90vw;
+    z-index: -1;
+}
+.Ft01Mov{
+    margin-left:10px;
+    width: 46vw;
+}
+.Ft02Mov{
+    margin-left:10px;
+    width: 46vw;
+}
+.DescImgsFMov{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    width: 95vw;
+    height: 100px;
+}
+.barritasRMovS{
+    position: flex;
+    margin-left:25px;
+    margin-top: 5px;
+}
+.barritasRMov{
+    position: flex;
+    margin-left:0px;
+    margin-top: 5px;
+}
+.barritasRMov2{
+    position: flex;
+    margin-left:15px;
+    margin-top: 5px;
+}
+.Info1Mov{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    color: #434343;
+}
+.Info2Mov{
+    height: 100px;
+    width:300px;
+    position: absolute;
+    left:245px;
+    color: #434343;
+}
 
-
-
-
-
+/*************************************IMAGENES MUJERES*********************************************************/
+.corte2Mov{
+    position: relative;
+    background-color: turquoise;
+    height: 60px;
+    width:100vw;
+    top:565px;
+}
+/*************************************FOOTER MOVIL*********************************************************/
+.FooterCuadroMov{
+    background-color: blueviolet;
+    position: relative;
+    top:10px;
+    width: 100vw;
+    height: 100vw;
+    z-index: 1;
+}
+/*************************************FOOTER MOVIL*********************************************************/
 
 
 
