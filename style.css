@@ -949,7 +949,8 @@ opacity:1;
     background-color:transparent;
     position: absolute;
     bottom: 15px;
-    left: 500px;
+    left: 37.5vw;
+    font-size: 11px;
 }
 /**-----------------------FOOTER------------------------**/
 
@@ -1034,7 +1035,7 @@ opacity:1;
 }
 .ToolbarMov{
     height:82px;
-    width: 100vw;
+    max-width: 100%;
     border-top-right-radius:55%;
     border-top-left-radius:55%;
     position: fixed;
@@ -1131,15 +1132,16 @@ opacity:1;
     left: 270px;
     bottom: 0px;
     height: 15px;
+    background-color: #ffaaff;
     
 }
 .modalGMov{
-    width: 550px;
+    width: 100vw;
     height: 780px;
     display: flex;
     position: relative;
-    top:-630px;
-    right:335px;
+    top:0px;
+    right:0px;
     bottom:0;
     background: rgba(0,0,0,0.5px);
     transition: all 500ms ease;
@@ -1157,12 +1159,11 @@ opacity:1;
     border:1px solid gold;
     position: relative;
     top:10px;
-    left: 45px;
-    width: 550px;
+    left: 0px;
+    width: 100vw;
     height: 780px;
     transition: all 500ms ease;
     background-color: #FFFFFF;
-    visibility: hidden;
 }
 
 .contenedorGMov header{
@@ -1218,6 +1219,62 @@ opacity:1;
     margin-top:-122px;
 }
 /*************************************SIZE GUIDE MOVIL*********************************************************/
+
+/*************************************COMPOSICION Y CUIDADO*********************************************************/
+.modalMov{
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    position: relative;
+    top:0px;
+    bottom:0;
+    background: rgba(0,0,0,0.5px);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+#btn-modalMov:checked ~ .modalMov{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorMov{
+    position: relative;
+    top:0px;
+    left: 0px;
+    background-color: #ffffff;
+    transition: all 500ms ease;
+    width: 100vw;
+    height: 645px;
+}
+
+.contenedorMov header{
+    padding: 10px;
+    background-color:#FFFFFF;
+    color:#3D43AC;
+    text-align: left;
+}
+
+.contenedorMov label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lbl-modalMov{
+    padding: 2px 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btn-modalMov{
+    display: none;
+}
+/*************************************COMPOSICION Y CUIDADO*********************************************************/
+
 
 /*************************************IMAGEN N3*********************************************************/
 
