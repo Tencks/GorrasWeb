@@ -1000,6 +1000,7 @@ opacity:1;
 
 .InfoGorraMov{
     width: 90vw;
+    height: 64vh;
     position: absolute;
     top:50px;
     margin-left:20px;
@@ -1009,7 +1010,7 @@ opacity:1;
 .ContentMov{
     position: relative;
     top:-55px;
-    height: 2665px;
+    height: 80vh;
     width: 100vw;
     background-color:#FFFFFF;
     box-shadow: 0px -10px 15px #0000000D;
@@ -1017,7 +1018,7 @@ opacity:1;
     border-top-left-radius:60px;
     z-index: -2;
 }
-
+/**------------------------------------------------------------------------------------------ACA ESTA EL TOOLBAR MOVIL-------------------------------------------------------------**/
 .ImagenGorraN1Mov{
     height: 100vw;
     width: 100vw;
@@ -1056,6 +1057,8 @@ opacity:1;
     bottom:25px;
     left: 32vw;
 }
+/**ACA ESTA EL BOTON SHOP MOVIL**/
+
 .RectShopMov{
     position: fixed;
     bottom: 8px;
@@ -1080,6 +1083,58 @@ opacity:1;
     font-weight: 600;
     color:#3D43AC;
 }
+.TextShopMov2{
+    margin-top:2.5vh;
+    font-size: 12px;
+    font-weight: 600;
+    color:rgb(12, 201, 28);;
+}
+
+
+.CircBtnShop:active{
+    background-color:#4700EF;
+}
+
+#btn-modalShopMov{
+    z-index: -1;   
+    display: none;
+}
+#btn-modalShopMov:checked ~ .modalShopMov{
+    opacity: 1;
+    visibility: visible;
+}
+#btn-modalShopMov:checked ~.TextShopMov{
+    display: none;
+}
+
+.modalShopMov{
+    height: 57px;
+    width: 57px;
+    position: fixed;
+    border-radius: 100%;
+    bottom: 34px;
+    left: 44.5vw;
+    background:transparent;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.contenedorShopMov{
+    transition: all 500ms ease;
+    font-size: 36px;
+    font-weight: 700;
+    background:linear-gradient(90deg,#3ABB41 40%,#05E705);
+    text-align: center;
+    color: #ffffff;
+    height: 57px;
+    width: 57px;
+    position: fixed;
+    border-radius: 100%;
+    bottom: 34px;
+    left: 44.5vw;
+}
+/**ACA ESTA EL BOTON SHOP MOVIL**/
+
 .ToolbarUser{
     position: fixed;
     bottom:25px;
@@ -1088,9 +1143,11 @@ opacity:1;
 .ToolbarBag{
     position: fixed;
     bottom:25px;
-    right: 0vw;
+    right: 12vw;
 }
+/**------------------------------------------------------------------------------------------ACA ESTA EL TOOLBAR MOVIL-------------------------------------------------------------**/
 
+/**------------------------------------------------------------------------------------------INFO IMAGEN N1 MOVIL-------------------------------------------------------------**/
 .RectGris{
     position: absolute;
     left: 45.5vw; 
@@ -1124,6 +1181,53 @@ opacity:1;
     vertical-align: middle;
     font-size: 15px;
 }
+.lbl-modalMov{
+    color:#434343;
+    padding: 2px 1px;
+    position: absolute;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    bottom:14vh;
+    
+}
+.tabla2Mov{
+    position: absolute;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    color:#434343;
+    width:75px;
+    bottom:6.5vh;
+}
+.tabla3Mov{
+    position: absolute;
+    text-align: left;
+    margin-top: 10px;
+    bottom:1vh;
+    width: 210px;
+    font-size:20px;
+    color:#434343;
+}
+.SignoMoreMov1{
+    position: absolute;
+    right: 1vw;
+    bottom: 15.5vh;
+}
+.SignoMoreMov2{
+    position: absolute;
+    bottom: 8vh;
+    right: 1vw;
+}
+.SignoMoreMov3{
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+}
+/**------------------------------------------------------------------------------------------INFO IMAGEN N1 MOVIL-------------------------------------------------------------**/
+
 /*************************************SIZE GUIDE MOVIL*********************************************************/
 .medidasMov {
     position: absolute;
@@ -1265,11 +1369,7 @@ opacity:1;
     cursor: pointer;
 }
 
-.lbl-modalMov{
-    padding: 2px 1px;
-    border-radius: 4px;
-    cursor: pointer;
-}
+
 #btn-modalMov{
     display: none;
 }
@@ -1280,7 +1380,7 @@ opacity:1;
 
 .ImagenGorraN3Mov{
     position: relative;
-    top:-2180px;
+    top:-10vh;
     left: 0px;
     height: 100vw;
     width: 100vw;
@@ -1320,7 +1420,7 @@ opacity:1;
 /*************************************IMAGEN N2*********************************************************/
 .ImagenGorraN2Mov{
     position: relative;
-    top:-2180px;
+    top:-10vh;
     left: 0px;
     height: 110vw;
     width: 100vw;
@@ -1330,16 +1430,16 @@ opacity:1;
     opacity: 0;
     visibility: hidden;
 }
-.SignoMN1-1Mov:hover ~.CuadroMN1Mov{
+.SignoMN1-1Mov:active ~.CuadroMN1Mov{
     opacity: 1;
     visibility:visible;
 }
-.SignoMN1-1Mov:hover ~.circuloMN1Mov{
+.SignoMN1-1Mov:active ~.circuloMN1Mov{
 transition: (1000 50 100 0);
 box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
-.SignoMN1-1Mov:hover{
+.SignoMN1-1Mov:active{
     opacity:1;
     visibility: visible;   
 }
@@ -1393,16 +1493,16 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
     opacity: 1;
     visibility: visible;
 }
-.SignoMN2-2Mov:hover ~.CuadroMN2Mov{
+.SignoMN2-2Mov:active ~.CuadroMN2Mov{
     opacity: 1;
     visibility:visible;
 }
-.SignoMN2-2Mov:hover ~.circuloMN2Mov{
+.SignoMN2-2Mov:active ~.circuloMN2Mov{
 transition: (1000 50 100 0);
 box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
-.SignoMN2-2Mov:hover{
+.SignoMN2-2Mov:active{
 opacity:1;   
 }
 .RectMN2Mov{
@@ -1450,16 +1550,16 @@ opacity:1;
     opacity: 0;
     visibility: hidden;
 }
-.SignoMN3-3Mov:hover ~.CuadroMN3Mov{
+.SignoMN3-3Mov:active ~.CuadroMN3Mov{
     opacity: 1;
     visibility:visible;
 }
-.SignoMN3-3Mov:hover ~.circuloMN3Mov{
+.SignoMN3-3Mov:active ~.circuloMN3Mov{
 transition: (1000 50 100 0);
 box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
-.SignoMN3-3Mov:hover{
+.SignoMN3-3Mov:active{
 opacity:1;   
 }
 .RectMN3Mov{
@@ -1507,16 +1607,16 @@ opacity:1;
     opacity: 0;
     visibility: hidden;
 }
-.SignoMN4-4Mov:hover ~.CuadroMN4Mov{
+.SignoMN4-4Mov:active ~.CuadroMN4Mov{
         opacity: 1;
         visibility:visible;
 }
-.SignoMN4-4Mov:hover ~.circuloMN4Mov{
+.SignoMN4-4Mov:active ~.circuloMN4Mov{
     transition: (1000 50 100 0);
     box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
-.SignoMN4-4Mov:hover{
+.SignoMN4-4Mov:active{
     opacity:1;   
 }
 .RectMN4Mov{
@@ -1565,7 +1665,7 @@ opacity:1;
     position: relative;
     margin-left: 0px;
     left: 0px;
-    top: -2185px;
+    top:-7vh;
     text-align: center;
     height: 60px;
     width:100vw;
@@ -1576,7 +1676,7 @@ opacity:1;
 /*************************************IMAGENES MUJERES*********************************************************/
 .AmbasImgMov{
     position: relative;
-    top:-2185px;
+    top:-7vh;
     width: 100vw;
     height: 90vw;
     z-index: -1;
@@ -1612,16 +1712,16 @@ opacity:1;
     margin-top: 5px;
 }
 .Info1Mov{
-    height: 100px;
-    width:300px;
+    height: 14vh;
+    width:40vw;
     position: absolute;
     color: #434343;
 }
 .Info2Mov{
-    height: 100px;
-    width:300px;
+    height: 14vh;
+    width:40vw;
     position: absolute;
-    left:245px;
+    left:49vw;
     color: #434343;
 }
 
@@ -1630,12 +1730,13 @@ opacity:1;
     position: relative;
     height: 60px;
     width:100vw;
-    top:-2185px;
+    top:-5vh;
+
 }
 /*************************************FOOTER MOVIL*********************************************************/
 .FooterCuadroMov{
     position: relative;
-    top:-2185px;
+    top:-7vh;
     width: 100vw;
     height:90vh;
     z-index: -1;
@@ -1713,7 +1814,7 @@ opacity:1;
     left: 5vw;
 }
 .RectEmailMov{
-    border: 2px solid gray;
+    border: 1px solid gray;
     width: 85vw;
     height: 8vh;
     background-color: transparent;
@@ -1756,7 +1857,7 @@ opacity:1;
 }
 .DerechosMov{
     position: absolute;
-    bottom: 7vh;
+    bottom: 9.5vh;
     width: 100vw;
     font-size: 11px;
     text-align: center;
