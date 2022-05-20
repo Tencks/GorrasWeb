@@ -1044,7 +1044,7 @@ opacity:1;
     right:0px;
     left: 0px;
     background-color:#EBEBEB;
-    z-index: 100;
+    
 }
 .ToolbarMenu{
     height: 15px;
@@ -1181,17 +1181,6 @@ opacity:1;
     vertical-align: middle;
     font-size: 15px;
 }
-.lbl-modalMov{
-    color:#434343;
-    padding: 2px 1px;
-    position: absolute;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size:20px;
-    bottom:14vh;
-    
-}
 .tabla2Mov{
     position: absolute;
     text-align: left;
@@ -1231,78 +1220,179 @@ opacity:1;
 /*************************************SIZE GUIDE MOVIL*********************************************************/
 .medidasMov {
     position: absolute;
-    top: 134px;
-    right: 0px;
-    left: 270px;
+    top: 82vh;
+    right: 5vw;
     bottom: 0px;
-    height: 15px;
-    background-color: #ffaaff;
+    height: 3.6vh;
+    background-color:transparent;
+    width: 23.4vw;    
+}
+
+
+
+.CircBtnShop000{
+    height: 3vh;
+    width: 26vw;
+    position: relative;
+    border-radius: 10px;
+    bottom: 0vh;
+    left: 0vw;
+    
     
 }
-.modalGMov{
-    width: 100vw;
-    height: 780px;
-    display: flex;
-    position: relative;
-    top:0px;
-    right:0px;
-    bottom:0;
-    background: rgba(0,0,0,0.5px);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-    background-color: #ffaaff;
 
+#btn-modalShopMov000{
+    z-index: -1;   
+    display: none;
 }
-#btn-modalGMov:checked ~ .modalGMov{
+#btn-modalShopMov000:checked ~ .modalShopMov000{
     opacity: 1;
     visibility: visible;
 }
-
-.contenedorGMov{
-    border:1px solid gold;
-    position: relative;
-    top:10px;
-    left: 0px;
-    width: 100vw;
-    height: 780px;
-    transition: all 500ms ease;
-    background-color: #FFFFFF;
-}
-
-.contenedorGMov header{
-    padding: 10px;
-    background-color: #FFFFFF;
-    color:#3D43AC;
-}
-
-.contenedorGMov label{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: rgb(172, 16, 16);
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.lbl-modalGMov{
-    border:1px solid gold;
-    background-color: #000000;
-    padding: 2px 3px;
-    margin-left:-32px;
-}
-#btn-modalGMov{
+#btn-modalShopMov000:checked ~.ToolbarMov{
+    opacity: 0;
+    visibility: hidden;
     display: none;
-
 }
-.tablaMov{
+.modalShopMov000{
+    transition: all 500ms ease;
+    font-size: 36px;
+    font-weight: 700;
+    background:transparent;
+    opacity: 0;
+    text-align: center;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top:-86.5vh;
+    left: -72vw;
+    visibility: hidden;
+    z-index: 200;
+}
+.contenedorShopMov000{
+    transition: all 500ms ease;
+    font-size: 36px;
+    font-weight: 700;
+    background:#FFFFFF;
+    opacity: 1;
+    text-align: center;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top:0vh;
+    left:0vw;
+    z-index: 200;
+}
+.contenedorShopMov000 header{
+    padding: 3vh;
+    background-color:#FFFFFF;
+    color:#3D43AC;
+    text-align: left;
+    font-size: 25px;
+}
+
+.contenedorShopMov000 label{
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+}
+
+.rectRMov1{
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid #3D43AC;
+    border-radius: 10%;
+    background-color: white;
+    color:#3D43AC;
+    text-align: center;
+    line-height: 200%;
+    position: absolute;
+    top:0px;
+    left: 7vw;
+    font-size: 3vh;
+}
+.rectRMov2{
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid #3D43AC;
+    border-radius: 10%;
+    background-color: white;
+    color:#3D43AC;
+    text-align: center;
+    line-height: 200%;
+    position: absolute;
+    top:0px;
+    left: 20vw;
+    font-size: 3vh;
+}
+.rectR2Mov{
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid #3D43AC;
+    border-radius: 10%;
+    background-color: #3D43AC;
+    color:white;
+    text-align: center;
+    line-height: 200%;
+    position: absolute;
+    top: 0px;
+    left: 33vw;
+    font-size: 3vh;
+}
+
+
+.InfoSizeMov{
+    height: 35vh;
+    width: 50vw;
+    position: absolute;
+    bottom: 0px;
+    left: 25vw;
+}
+.tablaMov1{
     color: #434343;
+    font-size: 2.2vh;
+    line-height: 100%;
     border: 1px solid #434343;
     border-radius: 5px;
-    margin-left: 100px;
-    margin-top: 10px;
     height: 30px;
     width: 300px;
+    position: absolute;
+    bottom: 21vh;
+}
+.tablaMov2{
+    color: #434343;
+    font-size: 2.2vh;
+    line-height: 100%;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    bottom: 16vh;
+}.tablaMov3{
+    color: #434343;
+    font-size: 2.2vh;
+    line-height: 100%;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    bottom: 11vh;   
+}
+.tablaMov4{
+    color: #434343;
+    font-size: 2.2vh;
+    line-height: 100%;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    bottom: 6vh;
+
 }
 .circuloP {
     color:white;
@@ -1325,53 +1415,90 @@ opacity:1;
 /*************************************SIZE GUIDE MOVIL*********************************************************/
 
 /*************************************COMPOSICION Y CUIDADO*********************************************************/
-.modalMov{
-    width: 100vw;
-    height: 800px;
-    display: flex;
+.tabla1Mov{
+    position: absolute;
+    top: 112vh;
+    left: 3.5vw;
+    bottom: 0px;
+    height: 3.6vh;
+    background-color:transparent;
+    width: 40vw;  
+}
+
+.lbl-modalMov{
+    color:#434343;
+    padding: 2px 1px;
     position: relative;
-    top:0px;
-    bottom:0;
-    background: rgba(0,0,0,0.5px);
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    bottom:0vh;
+    left: 0vw;   
+}
+
+
+.modalMov{
     transition: all 500ms ease;
+    font-size: 36px;
+    font-weight: 700;
+    background:transparent;
     opacity: 0;
+    text-align: center;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top:-115vh;
+    left:-3.5vw;
     visibility: hidden;
-    z-index: 1;
+    z-index: 200;
 }
 #btn-modalMov:checked ~ .modalMov{
     opacity: 1;
     visibility: visible;
 }
+#btn-modalMov:checked ~.ToolbarMov{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
 
 .contenedorMov{
-    position: relative;
-    top:0px;
-    left: 0px;
-    background-color: #ffffff;
     transition: all 500ms ease;
+    font-size: 36px;
+    font-weight: 700;
+    background:#FFFFFF;
+    opacity: 1;
+    text-align: center;
+    color: #ffffff;
+    height: 100vh;
     width: 100vw;
-    height: 645px;
+    position: relative;
+    top:0vh;
+    left:0vw;
+    z-index: 200;
 }
 
 .contenedorMov header{
-    padding: 10px;
+    padding: 3vh;
     background-color:#FFFFFF;
     color:#3D43AC;
     text-align: left;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .contenedorMov label{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    color: red;
-    font-size: 15px;
-    cursor: pointer;
+    top: 1vh;
+    right: 5vw;
 }
 
 
 #btn-modalMov{
-    display: none;
+    display:none;
 }
 /*************************************COMPOSICION Y CUIDADO*********************************************************/
 
@@ -1399,21 +1526,21 @@ opacity:1;
 .textImg3-1Mov{
     vertical-align: middle;
     text-align: center;
-    height: auto;
-    width: 500px;
+    height: 5vh;
+    width: 25vw;
     position: absolute;
     top:34vw;
-    right:0vw;
+    right:40vw;
     font-size: 15px;
 }
 .textImg3-2Mov{
     vertical-align: middle;
     text-align: center;
-    height: auto;
-    width: 300px;
+    height: 5vh;
+    width: 40vw;
     position: absolute;
     top:47vw;
-    left:18vw;
+    left:28vw;
 }
 /*************************************IMAGEN N3*********************************************************/
 
