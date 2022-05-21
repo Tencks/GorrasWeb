@@ -8,13 +8,14 @@
 .resolution{
     width: 99%;
 }
-/**MOVIL**/
+/**-------MOVIL--------**/
 @media (max-width:775px){
     .desktop{ display: none;}
 }
 
+
 /**COMPU**/
-@media (min-width:991px){
+@media (min-width:776px){
     .movil{ display: none;}
 }
 
@@ -193,13 +194,16 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 .SignoMN1-1:hover{
     opacity:1;
-    visibility: visible;   
+    visibility: visible;
+    z-index: 3;
 }
-
+.SignoMN1-1:hover ~.circuloMN1{
+    z-index: 2;
+}
 
 .RectMN1{
     position: absolute;
-    top:925px;
+    top:935px;
     left: 988px;
     height: 65px;
     width: 160px;
@@ -255,11 +259,17 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
 .SignoMN2-2:hover{
-opacity:1;   
+    opacity:1;   
+    visibility: visible;
+    z-index: 3;
 }
+.SignoMN2-2:hover ~.circuloMN2{
+    z-index: 2;
+}
+
 .RectMN2{
     position: absolute;
-    top:1110px;
+    top:1122px;
     left: 682px;
     height: 65px;
     width: 160px;
@@ -312,11 +322,16 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
 .SignoMN3-3:hover{
-opacity:1;   
+    opacity:1;   
+    visibility: visible;
+    z-index: 3;
+}
+.SignoMN3-3:hover ~.circuloMN3{
+    z-index: 2;
 }
 .RectMN3{
     position: absolute;
-    top:1087px;
+    top:1097px;
     left: 875px;
     height: 65px;
     width: 160px;
@@ -370,10 +385,15 @@ opacity:1;
 }
 .SignoMN4-4:hover{
     opacity:1;   
+    visibility: visible;
+    z-index: 3;
+}
+.SignoMN4-4:hover ~.circuloMN4{
+    z-index: 2;
 }
 .RectMN4{
     position: absolute;
-    top:1127px;
+    top:1137px;
     left: 1105px;
     height: 65px;
     width: 160px;
@@ -1018,6 +1038,13 @@ opacity:1;
     border-top-left-radius:60px;
     z-index: -2;
 }
+.NavIMG{
+    position:absolute;
+    top:44vh;
+    left: 1vw;
+    height: 6vh;
+    width: 2vw;
+}
 /**------------------------------------------------------------------------------------------ACA ESTA EL TOOLBAR MOVIL-------------------------------------------------------------**/
 .ImagenGorraN1Mov{
     height: 100vw;
@@ -1044,7 +1071,7 @@ opacity:1;
     right:0px;
     left: 0px;
     background-color:#EBEBEB;
-    
+    z-index: 5;    
 }
 .ToolbarMenu{
     height: 15px;
@@ -1062,7 +1089,7 @@ opacity:1;
 .RectShopMov{
     position: fixed;
     bottom: 8px;
-    left: 45.5vw;
+    left: 45vw;
 }
 .CircBtnShop{
     background-color:#3D43AC;
@@ -1071,12 +1098,12 @@ opacity:1;
     position: fixed;
     border-radius: 100%;
     bottom: 34px;
-    left: 44.5vw;
+    left: 44vw;
 }
 .ShopCarMov{
     position: fixed;
     bottom: 52px;
-    left: 48.2vw; 
+    left: 46.5vw; 
 }
 .TextShopMov{
     font-size: 12px;
@@ -1113,7 +1140,7 @@ opacity:1;
     position: fixed;
     border-radius: 100%;
     bottom: 34px;
-    left: 44.5vw;
+    left: 44vw;
     background:transparent;
     transition: all 500ms ease;
     opacity: 0;
@@ -1131,7 +1158,7 @@ opacity:1;
     position: fixed;
     border-radius: 100%;
     bottom: 34px;
-    left: 44.5vw;
+    left: 44vw;
 }
 /**ACA ESTA EL BOTON SHOP MOVIL**/
 
@@ -1166,6 +1193,8 @@ opacity:1;
     text-align: center;
     vertical-align: middle;
     font-size: 15px;
+    line-height: 220%;
+    
 }
 .circuloGNMov{
     position: flex;
@@ -1180,6 +1209,7 @@ opacity:1;
     text-align: center;
     vertical-align: middle;
     font-size: 15px;
+    line-height: 220%;
 }
 .tabla2Mov{
     position: absolute;
@@ -1220,7 +1250,7 @@ opacity:1;
 /*************************************SIZE GUIDE MOVIL*********************************************************/
 .medidasMov {
     position: absolute;
-    top: 82vh;
+    top: 102vh;
     right: 5vw;
     bottom: 0px;
     height: 3.6vh;
@@ -1265,7 +1295,7 @@ opacity:1;
     height: 100vh;
     width: 100vw;
     position: relative;
-    top:-86.5vh;
+    top:-106.5vh;
     left: -72vw;
     visibility: hidden;
     z-index: 200;
@@ -1300,8 +1330,8 @@ opacity:1;
 }
 
 .rectRMov1{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border: 1px solid #3D43AC;
     border-radius: 10%;
     background-color: white;
@@ -1314,8 +1344,8 @@ opacity:1;
     font-size: 3vh;
 }
 .rectRMov2{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border: 1px solid #3D43AC;
     border-radius: 10%;
     background-color: white;
@@ -1324,12 +1354,12 @@ opacity:1;
     line-height: 200%;
     position: absolute;
     top:0px;
-    left: 20vw;
+    left: 16.5vw;
     font-size: 3vh;
 }
 .rectR2Mov{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border: 1px solid #3D43AC;
     border-radius: 10%;
     background-color: #3D43AC;
@@ -1338,7 +1368,7 @@ opacity:1;
     line-height: 200%;
     position: absolute;
     top: 0px;
-    left: 33vw;
+    left: 26vw;
     font-size: 3vh;
 }
 
@@ -1371,7 +1401,8 @@ opacity:1;
     width: 300px;
     position: absolute;
     bottom: 16vh;
-}.tablaMov3{
+}
+.tablaMov3{
     color: #434343;
     font-size: 2.2vh;
     line-height: 100%;
@@ -1417,7 +1448,7 @@ opacity:1;
 /*************************************COMPOSICION Y CUIDADO*********************************************************/
 .tabla1Mov{
     position: absolute;
-    top: 112vh;
+    top: 142vh;
     left: 3.5vw;
     bottom: 0px;
     height: 3.6vh;
@@ -1449,7 +1480,7 @@ opacity:1;
     height: 100vh;
     width: 100vw;
     position: relative;
-    top:-115vh;
+    top:-145vh;
     left:-3.5vw;
     visibility: hidden;
     z-index: 200;
@@ -1545,9 +1576,16 @@ opacity:1;
 /*************************************IMAGEN N3*********************************************************/
 
 /*************************************IMAGEN N2*********************************************************/
-.ImagenGorraN2Mov{
+.CuadroImagenGorraN2Mov{
     position: relative;
     top:-10vh;
+    left: 0px;
+    height: 110vw;
+    width: 100vw;
+}
+.ImagenGorraN2Mov{
+    position: relative;
+    top:0;
     left: 0px;
     height: 110vw;
     width: 100vw;
@@ -1568,14 +1606,17 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 .SignoMN1-1Mov:active{
     opacity:1;
+    z-index: 3;
     visibility: visible;   
 }
-
+.SignoMN1-1Mov:active ~.circuloMN1Mov{
+    z-index:2 ;
+}
 
 .RectMN1Mov{
     position: absolute;
-    top:925px;
-    left: 988px;
+    top:22.5vh;
+    left: 48vw;
     height: 65px;
     width: 160px;
     font-size: 11px;
@@ -1585,20 +1626,20 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 .circuloMN1Mov{
     position: absolute;
-    top:1025px;
-    left: 0px;
-    height: 30px;
-    width: 30px;
+    top:34vh;
+    left: 58vw;
+    height: 4vh;
+    width: 4vh;
     background-color: #F9F9F9;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px #a3a7a452;
 }
 .SignoMN1Mov{
     position: absolute;
-    top:1032px;
-    left: 1061px;
-    height: 16px;
-    width: 16px;
+    top:35vh;
+    left: 59vw;
+    height: 2.2vh;
+    width: 2.2vh;
     color: gray;
     opacity: 1;
     z-index: 1;
@@ -1606,10 +1647,10 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 .SignoMN1-1Mov{
     position: absolute;
-    top: 1027.5px;
-    left: 1057px;
-    height: 25px;
-    width: 25px;
+    top:34.6vh;
+    left: 58.4vw;
+    height: 3vh;
+    width: 3vh;
     color: gray;
     opacity: 0; 
    visibility: transparent;
@@ -1617,8 +1658,8 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 }
 
 .CuadroMN2Mov{
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
 }
 .SignoMN2-2Mov:active ~.CuadroMN2Mov{
     opacity: 1;
@@ -1630,12 +1671,18 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
 .SignoMN2-2Mov:active{
-opacity:1;   
+    opacity:1; 
+    z-index: 3;
+    visibility: visible;
+}
+
+.SignoMN2-2Mov:active ~.circuloMN2Mov{
+    z-index:2 ;
 }
 .RectMN2Mov{
     position: absolute;
-    top:920px;
-    left: 0px;
+    top:49vh;
+    left: 15vw;
     height: 65px;
     width: 160px;
     font-size: 11px;
@@ -1645,31 +1692,33 @@ opacity:1;
 }
 .circuloMN2Mov{
     position: absolute;
-    top:1015px;
-    left: 100px;
-    height: 30px;
-    width: 30px;
-    background-color: #F9F9F9;
+    top:60vh;
+    left: 23vw;
+    height: 4vh;
+    width: 4vh;
+    background-color: #F9f9F9;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px #a3a7a452;
 }
 .SignoMN2Mov{
     position: absolute;
-    top:1015px;
-    left:105px;
-    height: 16px;
-    width: 16px;
+    top:61vh;
+    left: 24vw;
+    height: 2.2vh;
+    width: 2.2vh;
     color: gray;
+    opacity: 1;
     z-index: 1;
 }
 .SignoMN2-2Mov{
     position: absolute;
-    top: 1012.5px;
-    left: 102.5px;
-    height: 25px;
-    width: 25px;
+    top:60.6vh;
+    left: 23.5vw;
+    height: 3vh;
+    width: 3vh;
     color: gray;
     opacity: 0; 
+    visibility: transparent;
     z-index: 2;
 }
 
@@ -1687,12 +1736,17 @@ box-shadow: 0px 0px 0px 6px #a3a7a452;
 
 }
 .SignoMN3-3Mov:active{
-opacity:1;   
+    opacity:1;
+    visibility: visible;
+    z-index: 3;   
+}
+.SignoMN3-3Mov:active ~.circuloMN3Mov{
+    z-index:2 ;
 }
 .RectMN3Mov{
     position: absolute;
-    top:1087px;
-    left: 875px;
+    top:45vh;
+    left: 34vw;
     height: 65px;
     width: 160px;
     font-size: 11px;
@@ -1702,31 +1756,33 @@ opacity:1;
 }
 .circuloMN3Mov{
     position: absolute;
-    top:1183px;
-    left: 944px;
-    height: 30px;
-    width: 30px;
-    background-color: #F9F9F9;
+    top:57vh;
+    left: 43vw;
+    height: 4vh;
+    width: 4vh;
+    background-color: #F9f9F9;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px #a3a7a452;
 }
 .SignoMN3Mov{
     position: absolute;
-    top:1190px;
-    left: 951px;
-    height: 16px;
-    width: 16px;
+    top:58vh;
+    left: 44vw;
+    height: 2.2vh;
+    width: 2.2vh;
     color: gray;
+    opacity: 1;
     z-index: 1;
 }
 .SignoMN3-3Mov{
     position: absolute;
-    top: 1185.5px;
-    left: 946.5px;
-    height: 25px;
-    width: 25px;
+    top:57.6vh;
+    left: 43.5vw;
+    height: 3vh;
+    width: 3vh;
     color: gray;
     opacity: 0; 
+    visibility: transparent;
     z-index: 2;
 }
 
@@ -1744,12 +1800,17 @@ opacity:1;
 
 }
 .SignoMN4-4Mov:active{
-    opacity:1;   
+    opacity:1;
+    visibility: visible;
+    z-index: 3;   
+}
+.SignoMN4-4Mov:active ~.circuloMN4Mov{
+    z-index:2 ;
 }
 .RectMN4Mov{
     position: absolute;
-    top:1127px;
-    left: 1105px;
+    top:52vh;
+    left: 66vw;
     height: 65px;
     width: 160px;
     font-size: 11px;
@@ -1759,32 +1820,34 @@ opacity:1;
 }
 .circuloMN4Mov{
     position: absolute;
-    top:1223px;
-    left: 1160px;
-    height: 30px;
-    width: 30px;
-    background-color: #F9F9F9;
+    top:63vh;
+    left: 75vw;
+    height: 4vh;
+    width: 4vh;
+    background-color: #F9f9F9;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 3px #a3a7a452;
 }
 .SignoMN4Mov{
     position: absolute;
-    top:1230px;
-    left: 1167px;
-    height: 16px;
-    width: 16px;
+    top:64vh;
+    left: 76vw;
+    height: 2.2vh;
+    width: 2.2vh;
     color: gray;
+    opacity: 1;
     z-index: 1;
 
 }
 .SignoMN4-4Mov{
     position: absolute;
-    top: 1225.5px;
-    left: 1163px;
-    height: 25px;
-    width: 25px;
+    top:63.6vh;
+    left: 75.5vw;
+    height: 3vh;
+    width: 3vh;
     color: gray;
     opacity: 0; 
+    visibility: transparent;
     z-index: 2;
 }
 /*************************************IMAGEN N2*********************************************************/
